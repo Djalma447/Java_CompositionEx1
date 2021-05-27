@@ -40,12 +40,12 @@ public class Program {
 		for (int i = 1; i <= n; i++) {
 			System.out.println("Enter #" + i + " item data:");
 			System.out.print("Product name: ");
-			String Productname = sc.next();
+			String productName = sc.next();
 			System.out.print("Product price: ");
 			double price = sc.nextDouble();
 			System.out.print("Quantity: ");
 			int quantity = sc.nextInt();
-			Product product = new Product(Productname, price);
+			Product product = new Product(productName, price);
 			OrderItem item = new OrderItem(quantity, price, product);
 			order.addItem(item);
 		}
